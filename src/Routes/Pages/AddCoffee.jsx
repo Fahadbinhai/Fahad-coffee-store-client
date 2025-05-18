@@ -20,7 +20,7 @@ const AddCoffee = () => {
 
         // data send to database via server
 
-        fetch('http://localhost:3000/coffees', {
+        fetch('https://fahad-coffee-store-server.vercel.app/coffees', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

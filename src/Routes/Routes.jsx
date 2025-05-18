@@ -16,7 +16,7 @@ const router = createBrowserRouter([
       {
         path:'/',
         Component:AllCoffee,
-        loader: ()=> fetch('http://localhost:3000/coffees')
+        loader: ()=> fetch('https://fahad-coffee-store-server.vercel.app/coffees')
       },
       {
         path:'addCoffee',
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       {
         path: 'edit-coffee-details/:id',
         Component: EditCoffee,
-        loader: ({params})=> fetch(`http://localhost:3000/coffees/${params.id}`)
+        loader: ({params})=> fetch(`https://fahad-coffee-store-server.vercel.app/coffees/${params.id}`)
       }
     ]
   },

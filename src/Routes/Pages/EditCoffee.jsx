@@ -24,7 +24,7 @@ const EditCoffee = () => {
 
         // sending data to db
 
-        fetch(`http://localhost:3000/coffees/${_id}`, {
+        fetch(`https://fahad-coffee-store-server.vercel.app/coffees/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
